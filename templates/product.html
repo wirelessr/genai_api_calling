@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="mt-4">
+    <h1>Product Details</h1>
+    <p><strong>ID:</strong> {{ product['id'] }}</p>
+    <p><strong>Name:</strong> {{ product['name'] }}</p>
+    <p><strong>Description:</strong> {{ product['description'] }}</p>
+    <a href="{{ url_for('index') }}" class="btn btn-secondary">Back to Products</a>
+</div>
+{% endblock %}
+
